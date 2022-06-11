@@ -1,0 +1,315 @@
+<!--
+_____                 _              
+/ ____|               | |             
+| |  __  ___   ___   __| |             
+| | |_ |/ _ \ / _ \ / _` |             
+| |__| | (_) | (_) | (_| |             
+\_____|\___/ \___/ \__,_|             
+|  \/  |                (_)            
+| \  / | ___  _ __ _ __  _ _ __   __ _ 
+| |\/| |/ _ \| '__| '_ \| | '_ \ / _` |
+| |  | | (_) | |  | | | | | | | | (_| |
+|_|  |_|\___/|_|  |_| |_|_|_| |_|\__, |
+| \ | |                           __/ |
+|  \| | _____      _____         |___/ 
+| . ` |/ _ \ \ /\ / / __|              
+| |\  |  __/\ V  V /\__ \              
+|_| \_|\___| \_/\_/ |___/              
+
+Creator: Pub
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<title>Good Morning News</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="favicon.ico" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html {overflow: -moz-scrollbars-none;}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor, .fa-building-o, .fa-building {font-size:200px}
+@-moz-document url-prefix() { /* Disable scrollbar Firefox */
+          iframe{
+              scrollbar-width: none;
+          }
+          }
+          iframe {
+            margin: 0; /* remove default margin */
+            scrollbar-width: none; /* Also needed to disable scrollbar Firefox */
+            -ms-overflow-style: none;  /* Disable scrollbar IE 10+ */
+            overflow-y: scroll;
+          }
+          iframe::-webkit-scrollbar {
+            width: 0px;
+            background: transparent; /* Disable scrollbar Chrome/Safari/Webkit */
+          }
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-card w3-left-align w3-large" style="background-color:#b0a580;">
+    <h1 style="text-align: center; font-family: 'Courier New', Courier, monospace;"><b>Good Morning News</b></h1>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+  </div>
+</div>
+
+
+<!-- Header -->
+<header class="w3-container w3-center" 
+style="padding:100px 0px 0px 0px;
+ background-size: cover;
+ background-color: rgb(113, 107, 75);
+ height: auto;
+">
+<img src="./imgs/icon.gif" style="width: 150px; border-radius: 100%; box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);" alt="icon">
+<img src="./imgs/banner.png" style="background-size: cover; width: 100%; height: auto; box-shadow: 0px 6px 6px 1px rgba(0,0,0,0.25);" alt="banner">
+
+<br>
+
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container" style="background-color:#FFEEDB;">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h2><b style="box-shadow: 0 3px 2px -2px gray;">Welcome to Journalism 3.0</b></h2>
+      <h5 class="w3-padding-32">Good Morning News is the world's first decentralized
+         news organization. Leveraging the power of smart contracts, we publish the news directly
+        on the blockchain and deliver it straight to your wallets.</h5>
+
+      <p class="w3-text-grey">Good Morning News isn't just reviving traditional journalism; we are reinventing the concept 
+	  of journalism and what it means to meaningfully engage with our audience and contributors.
+	  In addition to publishing, Good Morning News has created an open-source framework within which anyone can create 
+	  sustainable, immutable, censorship-resistant journalism.
+	  </p>
+    </div>
+
+    <div class="w3-third w3-center">
+      <i class="w3-padding-64" style="font-size: 15em;">🗞️</i>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container" style="background-color:#e6e1ce;">
+  <div class="w3-content">
+    <div class="w3-center" style="padding-left: 5em; padding-right: 5em;">
+      <h1><b style="box-shadow: 0 3px 2px -2px gray;">How It Works</b></h1>
+      <h5 class="w3-padding-32">Journalists from around the world submit their work to the publication. Every day, an editorial 
+	  vote is held. Subscribers, anyone who holds one of the publication’s NFTs, gather and vote for the next day's story. 
+	  The journalist whose story is chosen, is awarded in the organization's native token PAPER.</h5>
+
+      <p class="w3-text-grey">Once the votes are counted and the editors approve the copy for publication, the designers go 
+	  to work laying out the next day’s issue. Once complete, the design is deployed to the blockchain and our organization's 
+	  NFT updates with the latest story. For every issue of Good Morning News sold, the organization uses half of the proceeds 
+	  to buy back the PAPER token and the other half goes towards our PAPER/MATIC liquidity pool.</p>
+    </div>
+  </div>
+</div>
+
+<!-- GMN DAILY -->
+<div class="w3-row-padding w3-padding-64 w3-container" style="background-color:#FFEEDB;">
+  <div class="w3-content">
+    <div class="w3-half w3-center">
+      <iframe src="https://gmn-daily.vercel.app/" 
+      style="height:500px;width:100%; 
+      border-radius: 25px;
+      box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.35);
+      " title="Dapps"></iframe>
+    </div>
+
+    <div class="w3-half" style="padding: 25px;">
+      <h1><b style="box-shadow: 0 3px 2px -2px gray;">GMN DAILY</b></h1>
+      <h6 class="w3-padding-25" style="text-align: justify;">
+        The daily edition of Good Morning News is a dynamic NFT that updates everyday with the latest
+        news and information from around the ecosystem. This publication is your ticket to the GMN 
+        discord server so you can see how the sausage is made.
+      </h6>
+    <div class="w3-half">
+      <img src="./imgs/discordBanner.gif" style="width: 100%; box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.35);" alt="banner">
+    </div>
+    <div class="w3-half">
+    <p class="w3-text-grey" style="text-align: center;">
+      <b>Cost:</b> 11 Ξ
+      <br>
+      <b>Supply:</b> 1m
+      <br>
+      <b>Network:</b> Polygon
+      <br>
+	  </p>
+  </div>
+    </div>
+  </div>
+</div>
+
+<!-- Newsies -->
+<div class="w3-row-padding w3-padding-64 w3-container" style="background-color:#f0eae6;">
+  <div class="w3-content">
+    <div class="w3-half" style="padding: 25px;">
+      <img src="./imgs/logo.png" style="width: 100%;" alt="logo">
+      <h6 class="w3-padding-25" style="text-align: justify;">
+        The GMN Newsies represent the vibe of Good Morning News. They give the contributers of GMN a digital
+        identity to showcase across the DAO ecosystem. These Newsies are helping to extend runways and keep 
+        the lights on at GMN as well as BanklessDAO and the Writers Guild by giving 20% of all proceeds back 
+        to these organizations that helped to make GMN what it is today.
+      </h6>
+    <div class="w3-third">
+      <img src="./imgs/example.gif" style="border-radius: 100%; width: 100px; box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.35);" alt="Newsies">
+    </div>
+    <div class="w3-twothird">
+    <p class="w3-text-grey" style="text-align: center;">
+      <b>Cost:</b> 0.08 Ξ
+      <br>
+      <b>Supply:</b> 1436
+      <br>
+      <b>BanklessDAO:</b> 10%
+      <br>
+      <b>Writers Guild:</b> 10%
+	  </p>
+  </div>
+    </div>
+
+    <div class="w3-half w3-center">
+      <iframe src="https://newsies-public.vercel.app/" 
+      style="height:500px;width:100%; 
+      border-radius: 25px;
+      box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.35);
+      " title="Dapps"></iframe>
+    </div>
+  </div>
+</div>
+
+<!-- Weekly Wei -->
+<div class="w3-row-padding w3-padding-64 w3-container" style="background-color:#FFEEDB; overflow: hidden;">
+  <div class="w3-content">
+    <div class="w3-half w3-center">
+      <iframe src="https://goodmorningnews.club/weeklyWei/" 
+      style="height:560px; width:100%; 
+      border-radius: 25px;
+      box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.35);"
+      title="Dapps"></iframe>
+    </div>
+
+    <div class="w3-half" style="padding: 10px;">
+      <h1><b style="box-shadow: 0 3px 2px -2px gray;">Weekly Wei</b></h1>
+      <h6 class="w3-padding-25" style="text-align: justify;">
+        The Weekly Wei is our first publication on Ethereum Mainnet. This NFT is a multipage
+        publication that provides a "Kindle" like viewing experience through an on-chain e-book. 
+        Like the daily publication, the Weekly Wei is dynamic and will update every Sunday with the previous
+        week's stories and, sometimes, a special editorial from the core team. 
+      </h6>
+
+      <iframe src="https://gateway.pinata.cloud/ipfs/QmXvHdxqPesUVVvXCDAWfTQvFEbcbtjLjkFjBFhwBp9ubD/index.html" 
+      style="width: 100%; height:320px; border-radius: 5%; border: none; box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.35);">
+      </iframe>
+        </div>
+      </div>
+    <div>
+  </div>
+</div>
+
+<!-- Goodies -->
+<div class="w3-row-padding w3-container" style="background-color:#e8dccf; padding-top: 64px; padding-bottom: 64px;">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <iframe src="https://archive-tau.vercel.app/" 
+      style="height:510px;width:95%; 
+      border-radius: 2em;
+      border: none;
+      box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+      top: -1000px;
+      " title="Dapps"></iframe>
+            <h3 class="w3-center" style="padding-top: 10px;">
+              The GMN Archive
+            </h3>
+              <p class="w3-text-grey" style="text-align: center;">
+              <b>Cost:</b> 10 Ξ
+              <br>
+              <b>Supply:</b> 150
+              <br>
+              <b>Network:</b> Polygon
+              </p>
+    </div>
+
+    <div class="w3-third w3-center">
+      <iframe src="https://donut-shop-redux.vercel.app/" 
+      style="height:510px;width:95%; 
+      border-radius: 2em;
+      border: none;
+      box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+      " title="Dapps"></iframe>
+            <h3 class="w3-center" style="padding-top: 10px;">
+              Donut Shop
+            </h3>
+              <p class="w3-text-grey" style="text-align: center;">
+              <b>Cost:</b> 10 Ξ
+              <br>
+              <b>Supply:</b> 133
+              <br>
+              <b>Network:</b> Polygon
+              </p>
+    </div>
+
+    <div class="w3-third w3-center">
+      <iframe src="https://feesh.vercel.app/" 
+      style="height:510px;width:95%;
+      border-radius: 2em;
+      border: none;
+      box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+      " title="Dapps"></iframe>
+            <h3 class="w3-center" style="padding-top: 10px;">
+              GMN Pet Store
+            </h3>
+              <p class="w3-text-grey" style="text-align: center;">
+              <b>Cost:</b> 5 Ξ
+              <br>
+              <b>Supply:</b> 1,000
+              <br>
+              <b>Network:</b> Polygon
+              </p>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Get Involved</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+   <a href="https://twitter.com/GMN_NFT"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+   <br><br>
+   <a href="https://discord.gg/bHSY4fUdJE" style="text-decoration: none"><i class="w3-hover-opacity" style="font-family: Arial;"><img src="https://emoji.gg/assets/emoji/5464-discord-new.png" width="64" height="64" alt="discord_new"></i></a>
+ </div>
+ <p>Good Morning News</p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
